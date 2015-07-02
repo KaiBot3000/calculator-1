@@ -1,32 +1,14 @@
-def add(a,b):
-    print "ADDING %d + %d" % (a, b)
-    return a + b
+# Modify this function to return a list of strings as defined above
+def list_benefits():
+    return ["More organized code", "More readable code", "Easier code reuse", "Allowing programmers to share and connect code together"]
 
-def subtract(a, b):
-    print "SUBTRACTING %d - %d" % (a, b)
-    return a - b
+# Modify this function to concatenate to each benefit - " is a benefit of functions!"
+def build_sentence(benefit):
+    return benefit + " is a benefit of functions" 
 
-def multiply(a, b):
-    print "MULTIPLYING %d * %d" % (a, b)
-    return a * b
+def name_the_benefits_of_functions():
+    list_of_benefits = list_benefits()
+    for benefit in list_of_benefits:
+        print build_sentence(benefit)
 
-def divide(a, b):
-    print "DIVIDING %d / %d" % (a, b)
-    return a / b
-
-print "Let's do some math with just functions!"
-
-age = add(30, 5)
-height = subtract(78, 4)
-weight = multiply(90, 2)
-iq = divide(100, 2)
-
-print "Age: %d, Height: %d, Weight: %d, IQ: %d" % (age, height, weight, iq)
-
-# A puzzle for extra credit
-print "Here is a puzzle."
-
-what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
-
-print "That becomes: ", what, "Can you do it by hand?"
-
+name_the_benefits_of_functions()
